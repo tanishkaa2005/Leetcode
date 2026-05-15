@@ -3,7 +3,7 @@ public:
     vector<int> findErrorNums(vector<int>& nums) {
 
         int n=nums.size();
-        vector<int> v(n+1,0);
+        vector<int> v(n+1,0); 
         vector<int> ans(2);
 
         for(int i=0;i<n;i++){
@@ -19,3 +19,5 @@ public:
         
     }
 };
+
+// n+1 as we want to store the elements eg- 1,2,2,4 at v[nums[0]]= v[1]  so v array becomes [0,1,0,0,0]  and at last it becomes [0,1,2,0,1] the frequency of ech element at their indexes
